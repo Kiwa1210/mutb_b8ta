@@ -1,0 +1,16 @@
+ //ブレイクポイント
+$breakpoint: (
+  sp: 'screen and (max-width: 768px)',
+  pc: 'screen and (min-width: 769px)'
+);
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
+}
+
+// カラーリスト
+$main:#333333;
+$sub:#000000;
+$bg:#fafafa;
+$border: #d6d6d6;
